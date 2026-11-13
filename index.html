@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Grace Print Shop - layanan percetakan, banner, spanduk, stiker, undangan, dan kebutuhan cetak lainnya.">
+<title>Grace Print Shop | Solusi Cetak Anda</title>
+<style>
+:root{--navy:#102b50;--blue:#1769aa;--sky:#eaf4ff;--orange:#ff9f1c;--ink:#17263b;--muted:#64748b;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 18px #102b5012}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);font-size:18px}
+.logo{width:43px;height:43px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--navy));display:grid;place-items:center;color:white;font-weight:900;font-size:17px}
+nav{display:flex;gap:25px;color:#42536a;font-weight:600;font-size:14px}nav a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;background:var(--orange);color:#17263b;font-weight:800;border:0;cursor:pointer}
+.btn.blue{background:var(--blue);color:#fff}.btn.outline{background:transparent;border:1px solid #cbd5e1;color:var(--navy)}
+.hero{background:radial-gradient(circle at 85% 20%,#2e79bb 0,transparent 28%),linear-gradient(120deg,#0d2342,#174d80);color:white;padding:86px 0 78px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center}
+.eyebrow{display:inline-block;background:#ffffff1c;border:1px solid #ffffff35;padding:7px 12px;border-radius:30px;font-size:12px;letter-spacing:1px;font-weight:700}
+h1{font-size:clamp(38px,5vw,60px);line-height:1.08;margin:20px 0}.hero p{font-size:17px;color:#dcecff;max-width:580px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.hero .outline{color:white;border-color:#ffffff70}
+.visual{background:#ffffff12;border:1px solid #ffffff30;border-radius:24px;padding:24px;transform:rotate(2deg)}
+.print-card{background:white;color:var(--navy);border-radius:16px;padding:24px;box-shadow:0 20px 50px #06152d55}
+.print-card .sheet{height:190px;border-radius:10px;background:linear-gradient(135deg,#f6c65b,#f28c28 48%,#1c5c9b 49%,#13345c);display:flex;align-items:end;padding:18px;color:white;font-size:25px;font-weight:900}
+.print-card small{color:var(--muted)}
+section{padding:75px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.section-head h2{font-size:34px;color:var(--navy);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:-30px;position:relative}
+.feature{background:white;padding:22px;border-radius:15px;box-shadow:0 10px 35px #102b5012;border:1px solid #edf1f6}
+.feature b{display:block;color:var(--navy);margin:7px 0}.ico{font-size:27px}
+.products{background:#f6f9fd}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.product{background:#fff;border:1px solid #e7edf5;border-radius:16px;padding:23px;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 14px 30px #102b5012}
+.product-icon{height:100px;border-radius:12px;background:var(--sky);display:grid;place-items:center;font-size:42px;margin-bottom:17px}
+.product h3{margin:0 0 5px;color:var(--navy)}.product p{margin:0 0 15px;color:var(--muted);font-size:14px}.product a{color:var(--blue);font-weight:800;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{padding:22px;border-left:3px solid var(--orange);background:#f8fafc;border-radius:0 12px 12px 0}.step strong{font-size:13px;color:var(--blue)}
+.cta{background:linear-gradient(120deg,#102b50,#1769aa);color:white;border-radius:22px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:30px;margin:0 0 7px}.cta p{color:#d9eaff;margin:0}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px}.contact-info{background:var(--sky);padding:28px;border-radius:16px}.contact-info h3{color:var(--navy);margin-top:0}.contact-info p{margin:12px 0;color:#3d536c}
+form{display:grid;gap:13px}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d7e0eb;border-radius:9px;font:inherit;background:white}textarea{min-height:110px;resize:vertical}label{font-size:13px;font-weight:700;color:#42536a}
+footer{background:#0b1d35;color:#cbd5e1;padding:30px 0;margin-top:70px}footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer b{color:white}
+.wa-float{position:fixed;right:20px;bottom:20px;background:#16a34a;color:white;padding:14px 18px;border-radius:50px;font-weight:800;box-shadow:0 8px 24px #0003;z-index:20}
+@media(max-width:800px){nav{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr}.visual{max-width:480px}.features,.grid,.steps{grid-template-columns:1fr 1fr}.cta{display:block}.cta .btn{margin-top:20px}}
+@media(max-width:540px){.hero{padding:60px 0}.features,.grid,.steps{grid-template-columns:1fr}section{padding:55px 0}.section-head h2{font-size:28px}.cta{padding:28px}.brand{font-size:15px}.nav{height:66px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="logo">AD</span><span>AMANAH<br><small style="font-weight:600;letter-spacing:1.5px">DIGITAL PRINTING</small></span></a>
+<nav><a href="#home">Beranda</a><a href="#layanan">Layanan</a><a href="#cara">Cara Pesan</a><a href="#kontak">Kontak</a></nav>
+<a class="btn" href="https://wa.me/6285167432765?text=Halo%20Amanah%20Digital%20Printing%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20cetak." target="_blank" rel="noopener">Pesan Sekarang</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><span class="eyebrow">SOLUSI CETAK • CEPAT • BERKUALITAS</span>
+<h1>Cetak kebutuhan Anda, jadi lebih mudah.</h1>
+<p>Grace Print Shop siap membantu kebutuhan promosi dan percetakan Anda. Konsultasikan desain, ukuran, bahan, dan jumlah pesanan melalui WhatsApp.</p>
+<div class="hero-actions"><a class="btn" href="https://wa.me/6285167432765?text=Halo%2C%20saya%20ingin%20konsultasi%20pesanan%20cetak." target="_blank" rel="noopener">Konsultasi via WhatsApp</a><a class="btn outline" href="#layanan">Lihat Layanan</a></div>
+</div>
+<div class="visual"><div class="print-card"><small>GRACE PRINT SHOP</small><div class="sheet">IDE ANDA,<br>HASIL CETAK KAMI.</div><h3>Wujudkan kebutuhan cetak Anda</h3><small>Hubungi kami untuk informasi bahan dan harga.</small></div></div>
+</div></section>
+<div class="container features">
+<div class="feature"><span class="ico">🎨</span><b>Bisa konsultasi desain</b><small>Diskusikan kebutuhan desain dan ukuran sebelum produksi.</small></div>
+<div class="feature"><span class="ico">🖨️</span><b>Beragam kebutuhan cetak</b><small>Pilihan produk untuk promosi, usaha, acara, dan kebutuhan lainnya.</small></div>
+<div class="feature"><span class="ico">🤝</span><b>Pelayanan mudah</b><small>Tanyakan detail pesanan langsung melalui WhatsApp.</small></div>
+</div>
+<section class="products" id="layanan"><div class="container">
+<div class="section-head"><h2>Layanan Percetakan</h2><p>Pilih jenis produk yang Anda butuhkan. Harga menyesuaikan ukuran, bahan, finishing, dan jumlah pesanan.</p></div>
+<div class="grid">
+<article class="product"><div class="product-icon">🪧</div><h3>Banner & Spanduk</h3><p>Untuk promosi toko, acara, kegiatan, dan kebutuhan informasi.</p><a href="#kontak">Tanyakan harga →</a></article>
+<article class="product"><div class="product-icon">🏷️</div><h3>Stiker & Label</h3><p>Label produk, stiker kemasan, cutting sticker, dan kebutuhan branding.</p><a href="#kontak">Tanyakan harga →</a></article>
+<article class="product"><div class="product-icon">📄</div><h3>Brosur & Flyer</h3><p>Media promosi cetak untuk usaha, sekolah, komunitas, dan acara.</p><a href="#kontak">Tanyakan harga →</a></article>
+<article class="product"><div class="product-icon">💌</div><h3>Undangan</h3><p>Undangan acara dengan pilihan desain dan ukuran sesuai kebutuhan.</p><a href="#kontak">Tanyakan harga →</a></article>
+<article class="product"><div class="product-icon">🪪</div><h3>Kartu Nama</h3><p>Kartu nama untuk memperkenalkan usaha dan identitas profesional.</p><a href="#kontak">Tanyakan harga →</a></article>
+<article class="product"><div class="product-icon">🖼️</div><h3>Poster & Lainnya</h3><p>Poster, nota, kebutuhan promosi, dan produk cetak lainnya.</p><a href="#kontak">Tanyakan harga →</a></article>
+</div>
+</div></section>
+<section id="cara"><div class="container"><div class="section-head"><h2>Cara Pemesanan</h2><p>Proses pemesanan praktis dalam tiga langkah.</p></div>
+<div class="steps"><div class="step"><strong>LANGKAH 01</strong><h3>Konsultasi</h3><p>Hubungi kami dan sampaikan jenis produk, ukuran, bahan, serta jumlah pesanan.</p></div>
+<div class="step"><strong>LANGKAH 02</strong><h3>Kirim desain</h3><p>Kirim file desain atau konsultasikan kebutuhan desain Anda bersama kami.</p></div>
+<div class="step"><strong>LANGKAH 03</strong><h3>Konfirmasi pesanan</h3><p>Konfirmasi harga, detail produksi, dan waktu pengerjaan sebelum pesanan diproses.</p></div></div>
+</div></section>
+<section><div class="container"><div class="cta"><div><h2>Siap mulai mencetak?</h2><p>Hubungi Grace Print Shop untuk konsultasi dan penawaran harga.</p></div><a class="btn" href="https://wa.me/6285167432765?text=Halo%20Amanah%20Digital%20Printing%2C%20saya%20ingin%20memesan." target="_blank" rel="noopener">Chat WhatsApp</a></div></div></section>
+<section id="kontak"><div class="container"><div class="section-head"><h2>Hubungi Kami</h2><p>Kirim detail kebutuhan cetak Anda. Kami akan membantu memberikan informasi lebih lanjut.</p></div>
+<div class="contact-grid"><div class="contact-info"><h3>Grace Print Shop</h3><p>📱 WhatsApp: <a href="https://wa.me/6285167432765" target="_blank" rel="noopener"><b>0851-6743-2765</b></a></p><p>✉️ Email: <a href="mailto:percetakanamanah.digital@gmail.com"><b>percetakanamanah.digital@gmail.com</b></a></p><p>🕘 Jam layanan: Silakan hubungi kami untuk konfirmasi jam operasional.</p></div>
+<form id="orderForm"><div><label for="nama">Nama</label><input id="nama" required placeholder="Nama Anda"></div><div><label for="produk">Produk yang dibutuhkan</label><select id="produk"><option>Banner / Spanduk</option><option>Stiker / Label</option><option>Brosur / Flyer</option><option>Undangan</option><option>Kartu Nama</option><option>Poster / Lainnya</option></select></div><div><label for="detail">Detail pesanan</label><textarea id="detail" placeholder="Contoh: ukuran, bahan, jumlah, dan deadline"></textarea></div><button class="btn blue" type="submit">Kirim Permintaan via WhatsApp</button></form>
+</div></div></section>
+</main>
+<footer><div class="container foot"><div><b>GRACE PRINT SHOP</b><br><small>Solusi kebutuhan percetakan Anda.</small></div><small>© <span id="year"></span> Grace Print Shop. Hak cipta dilindungi.</small></div></footer>
+<a class="wa-float" href="https://wa.me/6285167432765?text=Halo%20Amanah%20Digital%20Printing" target="_blank" rel="noopener">☏ WhatsApp</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('orderForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const nama=document.getElementById('nama').value.trim();
+ const produk=document.getElementById('produk').value;
+ const detail=document.getElementById('detail').value.trim();
+ const msg=`Halo Grace Print Shop, saya ${nama}. Saya ingin bertanya/memesan: ${produk}. Detail: ${detail||'-'}`;
+ window.open('https://wa.me/6285167432765?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body></html>
